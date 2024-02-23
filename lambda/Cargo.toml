@@ -1,0 +1,15 @@
+[package]
+name = "rust-redshift-udf"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.80"
+aws-config = "1.1.6"
+aws-sdk-location = "1.16.0"
+lambda_runtime = "0.9.2"
+serde = "1.0.136"
+tokio = { version = "1", features = ["macros"] }
+tracing = { version = "0.1", features = ["log"] }
+tracing-subscriber = { version = "0.3", default-features = false, features = ["env-filter", "fmt"] }
+serde_json = "1.0.114"
